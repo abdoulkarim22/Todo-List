@@ -1,0 +1,224 @@
+.border1{
+    border: 1px solid #609da0;
+    height: 95vh;
+    border-radius: 10px;
+}
+.letexteh1{
+    background-color: #609da0;
+    border-top-left-radius: 7px;
+    border-right: none;
+}
+.border2{
+    border: 1px solid #609da0;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+.border3{
+    border: 1px solid #609da0;
+    border-bottom: none;
+}
+.border8{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
+}
+.buttons{
+    background-color: #609da0;
+    color: white;
+    width: 65%;
+    font-size: 25px;
+    border: none;
+    border-radius: 9px;
+}
+.label{
+    color: #baa6ab;
+    position: relative;
+}
+.letext{
+    color: #609da0;
+}
+.laligneTR{
+    background-color: #609da0;
+}
+span{
+ color: #baa6ab;
+}
+
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+    bottom: 4px;
+}
+
+.inputbox{
+    position: relative;
+    /* width: 250px; */
+}
+.inputbox input{
+    padding: 10px;
+    border: 1px solid #609da0;
+    outline: none;
+    color: #baa6ab;
+}
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span
+{
+    color: white;
+    transform: translateX(10px) translateY(-32px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    background: #609da0;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: #609da0;
+    color: #baa6ab;
+}
+.inputbox1 textarea:valid ~ span,
+.inputbox1 textarea:focus ~ span{
+    color: white;
+    transform: translateX(10px) translateY(-36px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    background: #609da0;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.inputbox1 textarea{
+    padding: 10px;
+    border: 1px solid #609da0;
+    outline: none;
+    color: #baa6ab;
+}
+.inputbox1 span{
+    position: absolute;
+    left: 50px;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+    bottom: 569px;
+    
+}
+/* @media screen and (max-width:375px) { 
+    .inputbox1 textarea:valid ~ span,
+    .inputbox1 textarea:focus ~ span{
+        color: white;
+        transform: translateX(10px) translateY(-31px);
+        font-size: 0.75em;
+        padding: 0 10px;
+        background: #609da0;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .inputbox1 span{
+        position: absolute;
+        left: 50px;
+        padding: 10px;
+        pointer-events: none;
+        transition: 0.5s;
+        bottom: 499px;
+        
+    }
+}
+*/
+
+@media screen and (max-width:1440px) { 
+    .inputbox1 textarea:valid ~ span,
+    .inputbox1 textarea:focus ~ span{
+        color: white;
+        transform: translateX(10px) translateY(-31px);
+        font-size: 0.75em;
+        padding: 0 10px;
+        background: #609da0;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .inputbox1 span{
+        position: absolute;
+        left: 50px;
+        padding: 10px;
+        pointer-events: none;
+        transition: 0.5s;
+        bottom: 997px;
+        
+    }
+}
+@media screen and (max-width:1024px) { 
+    .inputbox1 textarea:valid ~ span,
+    .inputbox1 textarea:focus ~ span{
+        color: white;
+        transform: translateX(10px) translateY(-31px);
+        font-size: 0.75em;
+        padding: 0 10px;
+        background: #609da0;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .inputbox1 span{
+        position: absolute;
+        left: 50px;
+        padding: 10px;
+        pointer-events: none;
+        transition: 0.5s;
+        bottom: 772px;
+        
+    }
+}
+
+@media screen and (max-width:768px) { 
+    .inputbox1 textarea:valid ~ span,
+    .inputbox1 textarea:focus ~ span{
+        color: white;
+        transform: translateX(10px) translateY(-31px);
+        font-size: 0.75em;
+        padding: 0 10px;
+        background: #609da0;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .inputbox1 span{
+        position: absolute;
+        left: 50px;
+        padding: 10px;
+        pointer-events: none;
+        transition: 0.5s;
+        bottom: 459px;
+        
+    }
+}
+@media screen and (max-width:425px) { 
+    .inputbox1 textarea:valid ~ span,
+    .inputbox1 textarea:focus ~ span{
+        color: white;
+        transform: translateX(10px) translateY(-31px);
+        font-size: 0.75em;
+        padding: 0 10px;
+        background: #609da0;
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .inputbox1 span{
+        position: absolute;
+        left: 50px;
+        padding: 10px;
+        pointer-events: none;
+        transition: 0.5s;
+        bottom: 490px;
+    }
+} 
+
+
+

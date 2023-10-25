@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>Todo-list</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row border1 mt-4 ms-4 me-4">
+                <div class="col-lg-3 col-md-4 p-0 border2">
+                    <h3 class="text-center ms-0 text-white letexteh1 p-3">Ajouter
+                        une tache</h3>
+                    <div class="px-3 gap-3 mt-">
+                        <div class="mb-5 mt-5 inputbox">
+                            <input class=" mb-3 form-control" type="text" name="" required="required" id="inputText1">
+                            <span>Categorie</span>
+                        </div>
+                        <div class="mb-5 mt-5 inputbox">
+                            <input class=" mb-3 form-control" type="text" name="" required="required" id="inputText">
+                            <span>Titre</span>
+                        </div>
+         
+                         <div class="mb-5 inputbox">
+                            <input class="form-control" type="date" name id="inputDate">
+                            <span class="d-none">Data</span>
+                        </div>
+                        
+                           <div class="inputbox1">
+                            <textarea name="" class="form-control" id=""  cols="50" required="required" rows="2"></textarea>
+                            <span>Description</span>
+                           </div>
+                           <!--
+                        <div class="inputbox2">
+                            <input class="mt-4"   type="text" name="" required="required" id="">
+                            <span>statut</span>
+                        </div> -->
+                    </div>
+                      <div class=" justify-content-center d-flex">
+                            <button class="mt-5 le buttons p-2">Ajouter</button>
+                      </div>
+
+                    <div class="border3 mt-5">
+
+                    </div>
+                </div>
+
+                <div class="col-lg-9 col-md-8">
+                    <h5 class="text-center letext mt-4">Liste de tache</h5>
+                <!-- ==================================================================== -->
+
+                    <div class="mb-5 table-responsive">
+                        <table class="w-100">
+                            <thead>
+                                <tr class="laligneTR">
+                                 <td  class="p-4 text-white text-center">#</td>
+                                 <td  class="p-4 text-white text-center">Date</td>    
+                                 <td  class="p-4 text-white text-center">Titre</td>    
+                                 <td  class="p-4 text-white text-center">Categorie</td>    
+                                 <td  class="p-4 text-white text-center">Operations</td>                              
+                                </tr>
+                            </thead>
+                            <tbody id="tbody" class="border8">
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center">20/25/2021</td>
+                                    <td class="text-center">Projet</td>
+                                    <td class="text-center">Academique</td>
+                                    <td class="text-center gap-3"><i class="fa-solid fa-pencil me-1"></i><i class="fa-solid fa-trash"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
