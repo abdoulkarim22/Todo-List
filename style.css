@@ -219,6 +219,18 @@ span{
         bottom: 490px;
     }
 } 
+.datacolor{
+    background-color: transparent !important;
+    color: transparent !important;
+}
+.table88{
+    border: 1px solid #609da0;
+    height: 66%;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: none;  
+}
 
 
 

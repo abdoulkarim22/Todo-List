@@ -16,21 +16,26 @@
                         une tache</h3>
                     <div class="px-3 gap-3 mt-">
                         <div class="mb-5 mt-5 inputbox">
-                            <input class=" mb-3 form-control" type="text" name="" required="required" id="inputText1">
+                            <input class=" mb-3 form-control"   list="datalistOptions"  type="text" name="" required="required" id="inputCategorie">
                             <span>Categorie</span>
+                            <datalist id="datalistOptions">
+                              <option value="Academique">
+                              <option value="Extra-academique">
+                              <option value="Distraction">
+                            </datalist>
                         </div>
                         <div class="mb-5 mt-5 inputbox">
-                            <input class=" mb-3 form-control" type="text" name="" required="required" id="inputText">
+                            <input class=" mb-3 form-control" type="text" name="" required="required" id="inputTitre">
                             <span>Titre</span>
                         </div>
          
                          <div class="mb-5 inputbox">
                             <input class="form-control" type="date" name id="inputDate">
-                            <span class="d-none">Data</span>
+                            <span id="Data" class="datacolor">Data</span>
                         </div>
                         
                            <div class="inputbox1">
-                            <textarea name="" class="form-control" id=""  cols="50" required="required" rows="2"></textarea>
+                            <textarea name="" class="form-control" id="inputDescription"  cols="50" required="required"  rows="2"></textarea>
                             <span>Description</span>
                            </div>
                            <!--
@@ -40,20 +45,20 @@
                         </div> -->
                     </div>
                       <div class=" justify-content-center d-flex">
-                            <button class="mt-5 le buttons p-2">Ajouter</button>
+                            <button class="mt-5 le buttons p-2" id="btnAjouter">Ajouter</button>
                       </div>
-
-                    <div class="border3 mt-5">
-
-                    </div>
+                      <!-- ==================================================chartJS================================================== -->
+                              <div class="border3 mt-5">
+                        
+                              </div>
+                    <!-- ==================================================chartJS================================================== -->
                 </div>
 
-                <div class="col-lg-9 col-md-8">
+                <div class="col-lg-9 col-md-8 ">
                     <h5 class="text-center letext mt-4">Liste de tache</h5>
                 <!-- ==================================================================== -->
-
-                    <div class="mb-5 table-responsive">
-                        <table class="w-100">
+                  <div class="table-responsive table88">
+                        <table class="w-100 ">
                             <thead>
                                 <tr class="laligneTR">
                                  <td  class="p-4 text-white text-center">#</td>
@@ -64,16 +69,14 @@
                                 </tr>
                             </thead>
                             <tbody id="tbody" class="border8">
-                                <tr>
-                                    <td class="text-center">1</td>
-                                    <td class="text-center">20/25/2021</td>
-                                    <td class="text-center">Projet</td>
-                                    <td class="text-center">Academique</td>
-                                    <td class="text-center gap-3"><i class="fa-solid fa-pencil me-1"></i><i class="fa-solid fa-trash"></i></td>
-                                </tr>
+                               
                             </tbody>
                         </table>
                     </div>
+                    <div class="text-center mb-3"><span class="fs-3">Description</span></div>
+                  <div class="text-center">
+                    <textarea name="" id="" cols="168" rows="8"></textarea>
+                  </div>
                 </div>
             </div>
         </div>
