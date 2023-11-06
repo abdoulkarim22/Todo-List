@@ -4,7 +4,8 @@
     border-radius: 10px;
 }
 .letexteh1{
-    background-color: #609da0;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     border-top-left-radius: 7px;
     border-right: none;
 }
@@ -24,12 +25,18 @@
     height: 100px;
 }
 .buttons{
-    background-color: #609da0;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     color: white;
     width: 65%;
     font-size: 25px;
     border: none;
     border-radius: 9px;
+}
+.buttons:hover{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color: black;
 }
 .label{
     color: #baa6ab;
@@ -39,7 +46,8 @@
     color: #609da0;
 }
 .laligneTR{
-    background-color: #609da0;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 span{
  color: #baa6ab;
