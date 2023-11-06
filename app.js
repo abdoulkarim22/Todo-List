@@ -12,16 +12,51 @@ inpudata.addEventListener("click",function (e) {
     }
 });
 
-btnAjouter.addEventListener("click",function (event) {
+// ========================================== je stoke les value des input dans localStorage=======================================================
+ let tableTodolist = [];
+ if (!JSON.parse(localStorage.getItem("tableTodolist"))) {
+     tableTodolist = JSON.parse(localStorage.getItem("tableTodolist"));
+    }
+    const datas = {
+     categorie: inputCategorie.value,
+     titre:inputTitre.value,
+     date:inpudata.value,
+     description:inputDescription.value
+   };
+   tableTodolist.push(datas);
+   localStorage.setItem("tableTodolist",JSON.stringify(tableTodolist));
 
-});
-function lesElementsDuTables() {
-    tbody.innerHTML = ` <tr>
-    <td class="text-center"></td>
-    <td class="text-center">20/25/2021</td>
-    <td class="text-center">Projet</td>
-    <td class="text-center">Academique</td>
-    <td class="text-center gap-3"><i class="fa-solid fa-pencil me-1"></i><i class="fa-solid fa-trash"></i></td>
-</tr>`
+ 
+// ========================================== je stoke les value des input dans localStorage=======================================================
+
+
+
+
+
+
+btnAjouter.addEventListener("click",function () {
+
+
+if (inpudata.value === "" || inputCategorie.value === "" || inputDescription.value === "" || inputTitre.value === "") {
+prompt("error");
+}else{
+    lesElementsDuTables();
 }
+});
+
+function lesElementsDuTables(event) {
+tableTodolist.forEach(element => {
+    
+    tbody.innerHTML += `<tr>
+    <td class="text-center"></td>
+    <td class="text-center">${element.date}</td>
+    <td class="text-center">${element.titre}</td>
+    <td class="text-center">${element.categorie}</td>
+    <td class="text-center gap-3"><span class="sapn2 p-2 me-2"><i class="fa-solid fa-eye"></i></span><span class="sapn1 p-2 me-2"><i class="fa-solid fa-pencil me-1"></i></span><span class="sapn3 p-2"><i class="fa-solid fa-trash"></i></span></td>
+</tr>`
+});
+    
+    }
+  
+lesElementsDuTables();
 

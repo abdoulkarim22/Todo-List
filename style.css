@@ -231,6 +231,24 @@ span{
     border-right: none;
     border-top: none;  
 }
+.sapn1{
+    background-color: #26e8c3;
+    color: black;
+    border-radius: 5px;
+}
+.sapn2{
+    background-color: #80c6e8;
+    color: black;
+    border-radius: 5px;
+}
+.sapn3{
+    background-color: #e26265;
+    color: black;
+    border-radius: 5px;
+}
+.textarea{
+    width:99%;
+}
 
 
 
