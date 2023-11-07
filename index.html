@@ -13,24 +13,23 @@
         <div class="container-fluid">
             <div class="row border1 mt-4 ms-4 me-4">
                 <div class="col-lg-3 col-md-4 p-0 border2">
-                    <h3 class="text-center ms-0 text-white letexteh1 p-3">Ajouter
-                        une tache</h3>
+                    <h3 class="text-center ms-0 text-white letexteh1 p-3">Ajouter une tache</h3>
                     <div class="px-3 gap-3 mt-">
-                        <div class="mb-5 mt-5 inputbox">
-                            <input class=" mb-3 form-control"   list="datalistOptions"  type="text" name="" required="required" id="inputCategorie">
+                        <div class="mb-4 mt-5 inputbox">
+                            <input class=" mb-4 form-control"  list="datalistOptions1"  type="text" name="" required="required" id="inputCategorie">
                             <span>Categorie</span>
-                            <datalist id="datalistOptions">
+                            <datalist id="datalistOptions1">
                               <option value="Academique">
                               <option value="Extra-academique">
                               <option value="Distraction">
                             </datalist>
                         </div>
-                        <div class="mb-5 mt-5 inputbox">
+                        <div class="mb-4 mt-5 inputbox">
                             <input class=" mb-3 form-control" type="text" name="" required="required" id="inputTitre">
                             <span>Titre</span>
                         </div>
          
-                         <div class="mb-5 inputbox">
+                         <div class="mb-4 inputbox">
                             <input class="form-control" type="date" name id="inputDate">
                             <span id="Data" class="datacolor">Data</span>
                         </div>
@@ -39,6 +38,15 @@
                             <textarea name="" class="form-control" id="inputDescription"  cols="50" required="required"  rows="2"></textarea>
                             <span>Description</span>
                            </div>
+                           <div class=" mt-5 inputbox">
+                              <input class="form-control" list="datalistOptions2"   type="text" name="" required="required" id="inputStatut">
+                              <span>Statut</span>
+                              <datalist id="datalistOptions2">
+                                <option value="Niveau">
+                                <option value="En cours">
+                                <option value="Terminé">
+                              </datalist>
+                          </div>
                            <!--
                         <div class="inputbox2">
                             <input class="mt-4"   type="text" name="" required="required" id="">
@@ -50,7 +58,7 @@
                       </div>
                       <!-- ==================================================chartJS================================================== -->
                               <div class="border3 mt-5">
-                        
+                                <h2 class="text-center" style="color: #609da0;">Statut</h2>
                               </div>
                     <!-- ==================================================chartJS================================================== -->
                 </div>
@@ -58,6 +66,10 @@
                 <div class="col-lg-9 col-md-8 ">
                     <h5 class="text-center letext mt-4">Liste de tache</h5>
                 <!-- ==================================================================== -->
+                <div class="feedback text-center" id="feedbackID">
+                    <div class="text-center textAjout">Ajout de la tache</div>
+                    <div class="text-end divText p-2"><p>L'enregistrement s'est effectué avec success</p></div>
+                </div>
                   <div class="table-responsive table88">
                         <table class="w-100 ">
                             <thead>
@@ -69,14 +81,14 @@
                                  <td  class="p-4 text-white text-center">Operations</td>                              
                                 </tr>
                             </thead>
-                            <tbody id="tbody" class="border8">
+                            <tbody id="tbody" class="border8" style="border: 1.5px solid #609da0">
                                
                             </tbody>
                         </table>
                     </div>
                     <div class="text-center mb-3"><span class="fs-3">Description</span></div>
                   <div class="text-center">
-                    <textarea class="textarea" name="" id="" cols="" rows="8"></textarea>
+                    <textarea class="textarea" name="" id="" cols="" rows="6"></textarea>
                   </div>
                 </div>
             </div>

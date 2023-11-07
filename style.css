@@ -14,15 +14,18 @@
     border-top: none;
     border-left: none;
     border-bottom: none;
+  
+    height: 100%;
 }
 .border3{
     border: 1px solid #609da0;
     border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 .border8{
-    border: 2px solid red;
-    width: 100px;
-    height: 100px;
+    height: 80px;
+    
 }
 .buttons{
     background: rgb(131,58,180);
@@ -92,7 +95,7 @@ span{
 .inputbox1 textarea:valid ~ span,
 .inputbox1 textarea:focus ~ span{
     color: white;
-    transform: translateX(10px) translateY(-36px);
+    transform: translateX(10px) translateY(-38px);
     font-size: 0.75em;
     padding: 0 10px;
     background: #609da0;
@@ -112,7 +115,7 @@ span{
     padding: 10px;
     pointer-events: none;
     transition: 0.5s;
-    bottom: 569px;
+    bottom: 610px;
     
 }
 /* @media screen and (max-width:375px) { 
@@ -256,6 +259,34 @@ span{
 }
 .textarea{
     width:99%;
+}
+.hover:hover{
+    background-color: #c7dddf;
+}
+.feedback{
+    position: absolute;
+    border: 2px solid #609da0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: none;
+}
+.feedback-none{
+    display: block;
+}
+.textAjout{
+    color: white;
+    background-color: #609da0;
+    font-size: 25px;
+    width: 100%;
+
+}
+.divText{
+    background-color: white;
+    font-weight: bold;
+    height: 100%;
+}
+.hover:nth-child(even){
+    background-color: #a6cac9;
 }
 
 
