@@ -51,6 +51,7 @@
 }
 .laligneTR{
     background-color: aqua;
+
 }
 span{
  color: #baa6ab;
@@ -115,7 +116,7 @@ span{
     padding: 10px;
     pointer-events: none;
     transition: 0.5s;
-    bottom: 610px;
+    bottom: 615px;
     
 }
 /* @media screen and (max-width:375px) { 
@@ -354,4 +355,10 @@ span{
     color: black;
     font-size: 18px;
     color: #609da0;
+}
+.titreTD{
+    cursor: pointer;
+}
+.d-none{
+    display: none;
 }

@@ -13,6 +13,7 @@ const idNu = document.getElementById("idNu");
 const bady = document.getElementsByTagName(".body");
 const titre = document.getElementById("titre");
 const diveye = document.getElementById("Diveye");
+const btnModifier = document.getElementById("btnModifier");
 
 
 inpudata.addEventListener("click",function (e) {
@@ -58,6 +59,7 @@ else{
         description:inputDescription.value,
         statut: inputStatut.value
       };
+
    
     tableTodolist.push(datas);
     localStorage.setItem("tableTodolist",JSON.stringify(tableTodolist));
@@ -80,27 +82,53 @@ function lesElementsDuTables(event) {
 event?.preventDefault();
 tbody.innerHTML = "";
 tableTodolist.forEach((element,index) => {
-    tbody.innerHTML += `<tr class= "hover">
-    <td class="text-center">${index}</td>
+    tbody.innerHTML += `<tr class= "hover " onclick="idIdclick(${index})">
+    <td class="text-center">${index+1}</td>
     <td class="text-center">${element.date}</td>
-    <td class="text-center">${element.titre}</td>
+    <td class="text-center titreTD"  id="idTitre">${element.titre}</td>
     <td class="text-center ">${element.categorie}</td>
-    <td class="text-center  py-3 gap-3"><span class="sapn2 p-2 me-2" onclick = "showEye(${index})"><button class="btneye btnEye" ><i id="btneye" class="fa-solid fa-eye"></i></button></span><span class="sapn1 p-2 me-2"><i class="fa-solid fa-pencil me-1"></i></span><span class="sapn3 p-2"><i class="fa-solid fa-trash"></i></span></td>
+    <td class="text-center  py-3 gap-3"><span class="sapn2 p-2 me-2" onclick = "showEye(${index})"><button class="btneye btnEye" ><i id="btneye" class="fa-solid fa-eye"></i></button></span><span onclick="pencil(${index})" class="sapn1 p-2 me-2"><i class="fa-solid fa-pencil me-1"></i></span><span class="sapn3 p-2" onclick="trash(${index});"><i class="fa-solid fa-trash"></i></span></td>
 </tr>`
 });
 
  }
 lesElementsDuTables();
 
+
   const iconEye = document.querySelectorAll(".btnEye");
   const btneye = document.getElementById("btneye");
  
 
-//   btneye.addEventListener('click',function (event) {
-//     diveye.innerText = "codeloccol";
+  const idTitre = document.querySelectorAll("idTitre");
 
+function idIdclick(index) {
+  textareaID.innerText = tableTodolist[index].description;
+}
+// =============function trash =====================
+function trash(index) {
+  console.log(index);
+  tableTodolist.splice(index,1);
+  localStorage.setItem("tableTodolist",JSON.stringify(tableTodolist));
+  lesElementsDuTables();
+}
+// =============function trash =====================
 
-// });
+// =============function edit=====================
+btnModifier.addEventListener('click',function (event) {
+  btnAjouter.classList.remove("d-none");
+  btnModifier.classList.add("d-none");
+});
+function pencil(index) {
+  inpudata.value = tableTodolist[index].date;
+  inputTitre.value = tableTodolist[index].titre;
+  inputCategorie.value = tableTodolist[index].categorie;
+  inputDescription.value = tableTodolist[index].description;
+  inputStatut.value= tableTodolist[index].statut;
+
+  btnAjouter.classList.add("d-none");
+  btnModifier.classList.remove("d-none");
+}
+// =============function edit=====================
 
 
 function showEye(index) {
@@ -124,6 +152,32 @@ function showEye(index) {
 function idicon() {
     diveye.classList.add("disparu")
 }
+
+
+// =======================================::::::::: Chart js :::::::::=================================================
+document.addEventListener('DOMContentLoaded',function () {
+    const ctx = document.getElementById('myChart');
+   
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Lait','Sucre','Banana'],
+      datasets: [{
+       
+       data: ['12','5','7'],
+       borderWidth: 1
+     }]
+   },
+ options: {
+   scales: {
+     y: {
+       display: false,
+       beginAtZero: true
+      }
+    }
+  }
+});
+})
 
 
 
