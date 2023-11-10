@@ -4,8 +4,7 @@
     border-radius: 10px;
 }
 .letexteh1{
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+   background-color: aqua;
     border-top-left-radius: 7px;
     border-right: none;
 }
@@ -28,8 +27,7 @@
     
 }
 .buttons{
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-color: aqua;
     color: white;
     width: 65%;
     font-size: 25px;
@@ -49,8 +47,7 @@
     color: #609da0;
 }
 .laligneTR{
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-color: aqua;
 }
 span{
  color: #baa6ab;
@@ -288,6 +285,70 @@ span{
 .hover:nth-child(even){
     background-color: #a6cac9;
 }
-
-
-
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #d1e5ff;
+}
+.tdclick{
+    cursor: pointer;
+}
+.btneye{
+    background-color: transparent;
+    border: none;
+}
+.divEye{
+    position: absolute;
+    left: 990px;
+    bottom: 500px;
+    background-color: white;
+    border: 1px solid #baa6ab;
+    width: 400px;
+    height: 370px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.spaneye{
+    color: white;
+    font-size: 25px;
+    
+}
+.divbgeye{
+    background-color: #69a7a9;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.disparu{
+    display: none;
+}
+#spanDate{
+    color: black;
+    font-size: 18px;
+    color: #609da0;
+}
+#spanTitre{
+    color: black;
+    font-size: 18px;
+    color: #609da0;
+}
+#spanCategorie{
+    color: black;
+    font-size: 18px;
+    color: #609da0;
+}
+#spanDescriptions{
+    color: black;
+    font-size: 18px;
+    color: #609da0;
+}
+#spanStatu{
+    color: black;
+    font-size: 18px;
+    color: #609da0;
+}
