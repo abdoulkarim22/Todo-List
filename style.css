@@ -3,6 +3,9 @@
     height: 95vh;
     border-radius: 10px;
 }
+.bady{
+    background-color: rgb(245, 241, 241);
+}
 .letexteh1{
    background-color: aqua;
     border-top-left-radius: 7px;

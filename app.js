@@ -10,7 +10,7 @@ const feedback = document.getElementById("feedbackID");
 const tableClick = document.getElementById("tableClick");
 const textareaID = document.getElementById("textareaID");
 const idNu = document.getElementById("idNu");
-
+const bady = document.getElementsByTagName(".body");
 const titre = document.getElementById("titre");
 const diveye = document.getElementById("Diveye");
 
@@ -105,6 +105,7 @@ lesElementsDuTables();
 
 function showEye(index) {
     diveye.classList.remove("disparu");
+    
     tableTodolist.forEach(element => {
          diveye.innerHTML = ` 
          <div class="divbgeye p-1">
