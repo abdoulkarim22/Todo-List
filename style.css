@@ -2,6 +2,7 @@
     border: 1px solid #609da0;
     height: 95vh;
     border-radius: 10px;
+    height: 100%;
 }
 .bady{
     background-color: rgb(245, 241, 241);
@@ -16,7 +17,6 @@
     border-top: none;
     border-left: none;
     border-bottom: none;
-  
     height: 100%;
 }
 .border3{
@@ -230,6 +230,9 @@ span{
         transition: 0.5s;
         bottom: 490px;
     }
+    .border22{
+      height: 100%;
+    }
 } 
 .datacolor{
     background-color: transparent !important;
@@ -362,3 +365,7 @@ span{
 .d-none{
     display: none;
 }
+.Chart{
+    width: 260px;
+}
+

@@ -87,7 +87,7 @@ tableTodolist.forEach((element,index) => {
     <td class="text-center">${element.date}</td>
     <td class="text-center titreTD"  id="idTitre">${element.titre}</td>
     <td class="text-center ">${element.categorie}</td>
-    <td class="text-center  py-3 gap-3"><span class="sapn2 p-2 me-2" onclick = "showEye(${index})"><button class="btneye btnEye" ><i id="btneye" class="fa-solid fa-eye"></i></button></span><span onclick="pencil(${index})" class="sapn1 p-2 me-2"><i class="fa-solid fa-pencil me-1"></i></span><span class="sapn3 p-2" onclick="trash(${index});"><i class="fa-solid fa-trash"></i></span></td>
+    <td class="text-center  py-3 gap-3"><span class="sapn2 p-2 me-2" onclick = "showEye(${index})"><i id="btneye" class="fa-solid fa-eye"></i></span><span onclick="pencil(${index})" class="sapn1 p-2 me-2"><i class="fa-solid fa-pencil me-1"></i></span><span class="sapn3 p-2" onclick="trash(${index});"><i class="fa-solid fa-trash"></i></span></td>
 </tr>`
 });
 
@@ -114,10 +114,9 @@ function trash(index) {
 // =============function trash =====================
 
 // =============function edit=====================
-btnModifier.addEventListener('click',function (event) {
-  btnAjouter.classList.remove("d-none");
-  btnModifier.classList.add("d-none");
-});
+
+
+
 function pencil(index) {
   inpudata.value = tableTodolist[index].date;
   inputTitre.value = tableTodolist[index].titre;
@@ -127,6 +126,29 @@ function pencil(index) {
 
   btnAjouter.classList.add("d-none");
   btnModifier.classList.remove("d-none");
+
+  btnModifier.addEventListener('click',function (event) {
+    btnAjouter.classList.remove("d-none");
+    btnModifier.classList.add("d-none");
+    if (inpudata.value === "" || inputCategorie.value === "" ||  inputTitre.value=== "" || inputDescription.value === "" || inputStatut.value === "" ) {
+      alert("error");
+    }
+    else{
+      document.location.reload();
+    tableTodolist[index].date = inpudata.value;
+    tableTodolist[index].titre = inputTitre.value ;
+    tableTodolist[index].categorie = inputCategorie.value;
+    tableTodolist[index].description = inputDescription.value;
+    tableTodolist[index].statut  = inputStatut.value;
+  
+     localStorage.setItem("tableTodolist",JSON.stringify(tableTodolist));
+    }
+  
+  
+    
+  
+  
+  });
 }
 // =============function edit=====================
 
