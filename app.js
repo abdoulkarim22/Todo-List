@@ -134,7 +134,7 @@ function pencil(index) {
       alert("error");
     }
     else{
-      document.location.reload();
+    document.location.reload();
     tableTodolist[index].date = inpudata.value;
     tableTodolist[index].titre = inputTitre.value ;
     tableTodolist[index].categorie = inputCategorie.value;
