@@ -106,17 +106,20 @@ function idIdclick(index) {
 }
 // =============function trash =====================
 function trash(index) {
-  console.log(index);
+
   tableTodolist.splice(index,1);
   localStorage.setItem("tableTodolist",JSON.stringify(tableTodolist));
+  inpudata.value = "";
+  inputTitre.value = "";
+  inputCategorie.value = "";
+  inputDescription.value = "";
+  inputStatut.value= "";
   lesElementsDuTables();
+  
 }
 // =============function trash =====================
 
 // =============function edit=====================
-
-
-
 function pencil(index) {
   inpudata.value = tableTodolist[index].date;
   inputTitre.value = tableTodolist[index].titre;
@@ -143,11 +146,6 @@ function pencil(index) {
   
      localStorage.setItem("tableTodolist",JSON.stringify(tableTodolist));
     }
-  
-  
-    
-  
-  
   });
 }
 // =============function edit=====================
