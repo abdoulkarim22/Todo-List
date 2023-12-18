@@ -135,6 +135,8 @@ function pencil(index) {
     btnModifier.classList.add("d-none");
     if (inpudata.value === "" || inputCategorie.value === "" ||  inputTitre.value=== "" || inputDescription.value === "" || inputStatut.value === "" ) {
       alert("error");
+      btnModifier.classList.remove("d-none");
+      btnAjouter.classList.add("d-none");
     }
     else{
     document.location.reload();
@@ -170,7 +172,7 @@ function showEye(index) {
     });
 }
 function idicon() {
-    diveye.classList.add("disparu")
+    diveye.classList.add("disparu");
 }
 
 
@@ -181,7 +183,7 @@ document.addEventListener('DOMContentLoaded',function () {
   new Chart(ctx, {
     type: 'pie',
     data: {
-      labels: ['Lait','Sucre','Banana'],
+      labels: [],
       datasets: [{
        
        data: ['12','5','7'],
