@@ -127,10 +127,10 @@ function pencil(index) {
   inputDescription.value = tableTodolist[index].description;
   inputStatut.value= tableTodolist[index].statut;
 
-  btnAjouter.classList.add("d-none");
-  btnModifier.classList.remove("d-none");
+    btnAjouter.classList.add("d-none");
+    btnModifier.classList.remove("d-none");
 
-  btnModifier.addEventListener('click',function (event) {
+    btnModifier.addEventListener('click',function (event) {
     btnAjouter.classList.remove("d-none");
     btnModifier.classList.add("d-none");
     if (inpudata.value === "" || inputCategorie.value === "" ||  inputTitre.value=== "" || inputDescription.value === "" || inputStatut.value === "" ) {
