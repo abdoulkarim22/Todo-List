@@ -177,29 +177,35 @@ function idicon() {
 
 
 // =======================================::::::::: Chart js :::::::::=================================================
-document.addEventListener('DOMContentLoaded',function () {
-    const ctx = document.getElementById('myChart');
-   
-  new Chart(ctx, {
-    type: 'pie',
-    data: {
-      labels: [],
-      datasets: [{
-       
-       data: ['12','5','7'],
-       borderWidth: 1
-     }]
-   },
- options: {
-   scales: {
-     y: {
-       display: false,
-       beginAtZero: true
+
+document.addEventListener('DOMContentLoaded', function () {
+const ctx = document.getElementById('myChart');
+
+let tableValue = [];
+
+tableTodolist.forEach(element => {
+  tableValue.push(element.statut);
+});
+
+new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: tableValue,
+    datasets: [{
+      label: '# of Votes',
+      data: tableValue,
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        display: false,
+        beginAtZero: true
       }
     }
   }
 });
-})
-
+});
 
 
