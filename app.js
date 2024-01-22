@@ -78,6 +78,7 @@ else{
 });
 
 
+
 function lesElementsDuTables(event) {
 event?.preventDefault();
 tbody.innerHTML = "";
